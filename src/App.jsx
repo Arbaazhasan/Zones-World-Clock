@@ -6,6 +6,7 @@ import Clocks from './components/Clocks/Clocks';
 import AddCity from './components/AddCity/AddCity';
 import { Toaster } from 'react-hot-toast';
 import { useClose } from './hooks/useClose.hook';
+import Screen from './components/Screen/Screen';
 
 const App = () => {
 
@@ -14,10 +15,11 @@ const App = () => {
   return (
     <div className='app'>
       <Toaster />
-
       {
         isClose && <AddCity setIsClose={setIsClose} />
       }
+
+      <Screen />
 
       <Header />
       <Clocks />
