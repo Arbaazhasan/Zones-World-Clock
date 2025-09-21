@@ -1,5 +1,5 @@
 import Clock from './components/Clock/Clock';
-import './app.css';
+import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Clocks from './components/Clocks/Clocks';
