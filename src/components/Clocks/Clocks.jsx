@@ -14,15 +14,9 @@ const Clocks = () => {
 
 
     const [currentTime, setCurrentTime] = useState([]);
-
-    console.log(currentTime)
     useEffect(() => {
 
-        // const zonesArray = ["Asia/Kolkata", "America/New_York", "Europe/London", "America/Los_Angeles"];
         const zonesArray = JSON.parse(localStorage.getItem("zones"));
-
-        // console.log(JSON.parse(localStorage.getItem("zones")))
-
         const id = setInterval(() => {
 
             setCurrentTime(() => {
