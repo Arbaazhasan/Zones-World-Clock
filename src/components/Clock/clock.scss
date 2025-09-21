@@ -1,0 +1,166 @@
+.clock {
+
+    // border: 2px solid red;
+    min-width: 47%;
+    // width: 100%;
+    max-width: 100%;
+    height: 78vh;
+
+
+    padding: 1.5vw;
+    border-radius: 1vw;
+    border: 2px solid rgb(49, 49, 49);
+    box-shadow: 0px 0px 8px rgb(14, 14, 14) inset;
+    background-image: linear-gradient(to bottom, rgb(27, 27, 27), rgb(23, 23, 23));
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // border: 2px solid red;
+
+    &:only-child {
+        min-width: 100%;
+    }
+
+    >.clock-header {
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >.location {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 0.5rem;
+
+
+            >.country-flag-icon {
+                width: 2.2rem;
+                height: 1.7rem;
+                border-radius: 3px;
+                overflow: hidden;
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            >p {
+                color: white;
+                font-size: large;
+
+            }
+        }
+
+
+        >.option-icon {
+            >p {
+                color: rgb(96, 96, 96);
+                opacity: 40%;
+
+                border-radius: 100%;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(50, 50, 50);
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
+
+    >.clock-body {
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        gap: .5rem;
+        color: white;
+
+        >.current-time {
+            // border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            font-size: 9rem;
+            text-shadow: 0px 10px 10px rgb(0, 0, 0);
+
+            >p {
+                font-family: "Digital7", ;
+
+
+                >span {
+                    font-family: "Digital7", ;
+                    color: rgb(150, 150, 150);
+
+                }
+
+            }
+
+            >span {
+                // border: 2px solid red;
+                font-size: medium;
+                display: flex;
+                color: rgb(150, 150, 150);
+                font-weight: bolder;
+                // flex-direction: column-reverse;
+
+            }
+
+
+
+        }
+
+        >.day-date {
+            font-size: small;
+            font-weight: bolder;
+            background: linear-gradient(to bottom, white, rgb(239, 239, 239), rgb(77, 77, 77));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+
+
+
+    }
+
+    >.time-zone {
+        // border: 2px solid red;
+
+        >div {
+
+
+            background-color: rgb(32, 32, 32);
+            padding: .8rem;
+            width: fit-content;
+            height: fit-content;
+            border-radius: .5rem;
+
+            >p {
+                background: linear-gradient(to bottom, white, rgb(239, 239, 239), rgb(77, 77, 77));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                font-weight: 600;
+                font-size: large;
+
+
+            }
+
+        }
+
+    }
+
+}

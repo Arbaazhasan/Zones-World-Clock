@@ -1,0 +1,46 @@
+.header {
+    // border: 2px solid red;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    font-size: small;
+    padding: 1rem;
+    // padding-bottom: 2rem;
+
+    >p {
+        // border: 2px solid red;
+        color: white;
+
+
+        background: linear-gradient(to bottom, white, rgb(239, 239, 239), rgb(77, 77, 77));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        // text-align: center;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+
+        &:nth-child(3) {
+            font-size: xx-large;
+            text-align: center;
+
+        }
+
+        &:nth-child(4) {
+            text-align: right;
+        }
+
+        &:nth-child(5) {
+            text-align: right;
+        }
+    }
+
+
+}

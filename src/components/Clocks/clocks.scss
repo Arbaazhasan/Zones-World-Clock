@@ -1,0 +1,15 @@
+.clocks-body {
+    // border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
