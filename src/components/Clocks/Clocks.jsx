@@ -27,7 +27,7 @@ const Clocks = () => {
 
             setCurrentTime(() => {
                 let currentTimeArray = [];
-                zonesArray.map((val, index) => {
+                zonesArray?.map((val, index) => {
                     let time = moment().tz(val.timezone);
 
                     // currentTimeArray.push(time);
